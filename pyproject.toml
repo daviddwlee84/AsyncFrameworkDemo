@@ -4,7 +4,20 @@ version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.13"
-dependencies = []
+dependencies = [
+    "strawberry-graphql[fastapi]>=0.235.0",
+    "fastapi>=0.104.0",
+    "uvicorn[standard]>=0.24.0",
+    "supabase>=2.2.0",
+    "psycopg2-binary>=2.9.9",
+    "asyncpg>=0.29.0",
+    "stripe>=7.8.0",
+    "streamlit>=1.28.0",
+    "requests>=2.31.0",
+    "python-dotenv>=1.0.0",
+    "pydantic>=2.5.0",
+    "sqlalchemy>=2.0.23",
+]
 
 # https://github.com/astral-sh/uv/issues/6925
 [tool.uv]
