@@ -4,7 +4,16 @@ version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.13"
-dependencies = []
+dependencies = [
+    "asyncpg>=0.30.0",
+    "fastapi[standard]>=0.116.1",
+    "psycopg2-binary>=2.9.10",
+    "python-dotenv>=1.1.1",
+    "strawberry-graphql[fastapi]>=0.278.0",
+    "streamlit>=1.47.1",
+    "stripe>=12.4.0",
+    "uvicorn>=0.35.0",
+]
 
 # https://github.com/astral-sh/uv/issues/6925
 [tool.uv]
@@ -12,3 +21,10 @@ index-url = "https://mirrors.tuna.tsinghua.edu.cn/pypi/web/simple"
 
 [[tool.uv.index]]
 url = "https://mirrors.tuna.tsinghua.edu.cn/pypi/web/simple"
+
+[dependency-groups]
+dev = [
+    "black>=25.1.0",
+    "ipdb>=0.13.13",
+    "ipython>=9.4.0",
+]
